@@ -32,7 +32,7 @@ export class BookEditComponent implements OnInit {
 
   submit() {
     let data = this.formEdit?.value;
-    this.bookService.edit(data, this.id).subscribe(res => {
+    this.bookService.edit( this.id, data).subscribe(res => {
       this.router.navigate(['/book']);
     })
   }

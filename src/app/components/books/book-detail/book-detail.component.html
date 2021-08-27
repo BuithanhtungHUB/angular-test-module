@@ -1,1 +1,21 @@
-<p>book-detail works!</p>
+<h1 style="text-align: center">Chi tiết cuốn sách</h1>
+<a routerLink="/book" class="btn btn-primary">Xem danh sách</a>
+<div class="card">
+  <div class="card-header">
+    Chi tiết sách
+  </div>
+  <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <label><b>Tên sách:</b></label>
+        <p>{{book.title}}</p>
+      </blockquote>
+      <blockquote class="blockquote mb-0">
+        <label><b>Tác giả: </b></label>
+        <p>{{book.author}}</p>
+      </blockquote>
+      <blockquote class="blockquote mb-0">
+        <label><b>Mô tả:</b></label>
+        <p>{{book.description}}</p>
+      </blockquote>
+  </div>
+</div>

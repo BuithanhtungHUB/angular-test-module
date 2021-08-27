@@ -6,6 +6,7 @@ import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import {RouterModule, Routes} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
+import { BookDeleteComponent } from './book-delete/book-delete.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: ":id/detail",
     component: BookDetailComponent
+  },
+  {
+    path: ":id/delete",
+    component: BookDeleteComponent
   }
 ]
 
@@ -31,7 +36,8 @@ const routes: Routes = [
     BookListComponent,
     BookAddComponent,
     BookEditComponent,
-    BookDetailComponent
+    BookDetailComponent,
+    BookDeleteComponent
   ],
   imports: [
     [RouterModule.forChild(routes)],

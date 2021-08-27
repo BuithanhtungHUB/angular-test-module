@@ -1,4 +1,4 @@
-<label>Edit book information!</label>
+<h1 style="text-align: center">Cập nhật sách</h1>
 <form *ngIf="formEdit" [formGroup]="formEdit" (ngSubmit)="submit()">
   <div class="form-group">
     <label for="title">Title</label>
@@ -12,5 +12,6 @@
     <label for="description">Description</label>
     <input type="text" class="form-control" id="description" formControlName="description">
   </div>
-  <button class="btn btn-primary">update</button>
+  <button class="btn btn-success">update</button>
+  <button routerLink="/book" class="btn btn-secondary">Thoát</button>
 </form>

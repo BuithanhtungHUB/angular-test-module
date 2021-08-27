@@ -1,5 +1,6 @@
-<p>Có {{count}} cuốn sách</p>
-<button class="btn btn-success" routerLink="create">Add book</button>
+<h1 style="text-align: center">Danh sách các cuốn sách</h1>
+<h3   >Có {{count}} cuốn sách</h3>
+<button class="btn btn-primary" routerLink="create">Add book</button>
 <table class="table table-hover">
   <thead>
   <tr>
@@ -14,8 +15,9 @@
     <th scope="row">{{i +1}}</th>
     <td><a routerLink="{{book.id}}/detail">{{book.title}}</a></td>
     <td>{{book.author}}</td>
-    <td><button class="btn btn-danger" (click)="deleteBook(book.id)">Delete</button></td>
-    <td><button class="btn btn-secondary" routerLink="{{book.id}}/edit">Edit</button></td>
+    <td><button class="btn btn-danger" routerLink="{{book.id}}/delete">Delete</button></td>
+<!--    <td><button class="btn btn-danger" (click)="deleteBook(book.id)">Delete</button></td>-->
+    <td><button class="btn btn-primary" routerLink="{{book.id}}/edit">Edit</button></td>
   </tr>
   </tbody>
 </table>

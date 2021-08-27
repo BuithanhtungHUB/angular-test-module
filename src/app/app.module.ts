@@ -9,12 +9,13 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
 import { MasterComponent } from './components/layouts/master/master.component';
 import {HttpClientModule} from "@angular/common/http";
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    MasterComponent
+    MasterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<h1 style="text-align: center">Xóa sách</h1>
+<div class="card">
+  <div class="card-header">
+    Xóa sách
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <label><b>Tên sách:</b></label>
+      <p>{{book.title}}</p>
+    </blockquote>
+    <blockquote class="blockquote mb-0">
+      <label><b>Tác giả: </b></label>
+      <p>{{book.author}}</p>
+    </blockquote>
+    <blockquote class="blockquote mb-0">
+      <label><b>Mô tả:</b></label>
+      <p>{{book.description}}</p>
+    </blockquote>
+    <button class="btn btn-danger" (click)="deleteBook(book.id)">Xóa sách</button>
+    <button class="btn btn-secondary" routerLink="/book">thoát</button>
+  </div>
+</div>
