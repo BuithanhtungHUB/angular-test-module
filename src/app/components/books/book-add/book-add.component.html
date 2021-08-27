@@ -1,0 +1,16 @@
+<label>Add new book information!</label>
+<form *ngIf="formBookAdd" [formGroup]="formBookAdd" (ngSubmit)="submit()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" formControlName="title">
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" class="form-control" id="author" formControlName="author">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" formControlName="description">
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>

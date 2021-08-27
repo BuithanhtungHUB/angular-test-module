@@ -1,27 +1,24 @@
-# AngularTestModule
+# Install dependencies
+```$ npm install```
+# Running server
+```$ node app.js```
+- The server listens at port 3000
+# APIs
+#### Book model
+    {
+        id: 1,
+        title: 'Clean Code',
+        author: 'Robert C. Martin',
+        description: 'Clean Code Book'
+    }
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Getting all books
+```GET http://localhost:3000/books```
+#### Getting a book by id
+```GET http://localhost:3000/books/1```
+#### Creating a book
+```POST http://localhost:3000/books```
+#### Deleting a book by id
+```DELETE http://localhost:3000/books/1```
+#### Updating a book by id
+```PUT http://localhost:3000/books/1```
